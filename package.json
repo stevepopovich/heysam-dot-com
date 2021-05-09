@@ -2,7 +2,7 @@
   "name": "heysam",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://stevepopovich.github.io/heysam-dot-com",
+  "homepage": "https://heysam.tech/",
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@types/react": "^17.0.5",
