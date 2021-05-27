@@ -1,4 +1,4 @@
-import { AppBar, makeStyles, Slide, Toolbar, Typography, useScrollTrigger } from "@material-ui/core";
+import { AppBar, makeStyles, Toolbar, Typography } from "@material-ui/core";
 import React from "react";
 import { HideOnScroll } from "./HideOnScroll";
 
@@ -11,7 +11,6 @@ const useStyles = makeStyles(() => ({
 
 export function SamHomeAppBar() {
   const classes = useStyles();
-  const trigger = useScrollTrigger();
 
   return (
     <HideOnScroll>
