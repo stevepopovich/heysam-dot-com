@@ -9,7 +9,7 @@ const useStyles = makeStyles(() => ({
     card: {
       maxWidth: mainDisplayWidth,
       margin: 'auto',
-      marginTop: 16
+      marginTop: 72
     },
     media: {
       height: 0,
