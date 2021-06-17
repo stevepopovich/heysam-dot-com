@@ -4,6 +4,7 @@ import { MainFeatureCard } from './MainFeatureCard';
 import { makeStyles } from '@material-ui/core';
 import { PhotoGalleryGrid } from './PhotoGalleryGrid';
 import { SamTourVideo } from './SamTourVideo';
+import { SamSTLViewer } from './SamSTLViewer';
 
 export const mainDisplayWidth = 800;
 
@@ -21,6 +22,7 @@ function App() {
     <div className={classes.root}>
       <SamHomeAppBar />
       <MainFeatureCard />
+      <SamSTLViewer />
       <PhotoGalleryGrid />
       <SamTourVideo />
     </div>
