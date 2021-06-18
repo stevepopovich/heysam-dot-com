@@ -1,5 +1,6 @@
-import { AppBar, makeStyles, Toolbar, Typography } from "@material-ui/core";
+import { AppBar, Drawer, IconButton, makeStyles, Toolbar, Typography } from "@material-ui/core";
 import React from "react";
+import MenuIcon from '@material-ui/icons/Menu';
 import { HideOnScroll } from "./HideOnScroll";
 
 const appBarHeight = 72;
@@ -18,21 +19,50 @@ const useStyles = makeStyles(() => ({
 export function SamHomeAppBar() {
   const classes = useStyles();
 
+  const [state, setState] = React.useState({
+    drawerOpen: false,
+  });
+
+  const toggleDrawer = (open: boolean) => () => {
+    setState({ ...state, drawerOpen: open });
+  }
+
+  const closeDrawerIfOpen = () => {
+    if (state.drawerOpen) {
+      setState({ ...state, drawerOpen: false });
+    }
+  }
+
   return (
-    <HideOnScroll>
-      <AppBar className={classes.appbar} >
-          <Toolbar>
-          <Typography variant="h6">
-              👋 Hey Sam!
-          </Typography>
-          <img
-            src="/under-construction.png"
-            alt="Banner that indicates that the website is stil under construction"
-            height={appBarHeight}
-            className={classes.underConstruction}
-          />
-          </Toolbar>
-      </AppBar>
-    </HideOnScroll>
+    <div
+      onClick={closeDrawerIfOpen}
+    >
+      <Drawer anchor="left" open={state.drawerOpen}>
+        Hey now!
+      </Drawer>
+      <HideOnScroll>
+        <AppBar className={classes.appbar} >
+            <Toolbar>
+            <IconButton
+               edge="start"
+               color="inherit"
+               aria-label="open drawer"
+               onClick={toggleDrawer(!state.drawerOpen)}
+             >
+              <MenuIcon />
+            </IconButton>
+            <Typography variant="h6">
+                👋 Hey Sam!
+            </Typography>
+            <img
+              src="/under-construction.png"
+              alt="Banner that indicates that the website is stil under construction"
+              height={appBarHeight}
+              className={classes.underConstruction}
+            />
+            </Toolbar>
+        </AppBar>
+      </HideOnScroll>
+    </div>
   )
 }
