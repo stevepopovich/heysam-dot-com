@@ -25,7 +25,12 @@ export function SamHomeAppBar() {
           <Typography variant="h6">
               👋 Hey Sam!
           </Typography>
-          <img src="/under-construction.png" height={appBarHeight} className={classes.underConstruction}/>
+          <img
+            src="/under-construction.png"
+            alt="Banner that indicates that the website is stil under construction"
+            height={appBarHeight}
+            className={classes.underConstruction}
+          />
           </Toolbar>
       </AppBar>
     </HideOnScroll>
