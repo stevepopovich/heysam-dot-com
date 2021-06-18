@@ -2,11 +2,17 @@ import { AppBar, makeStyles, Toolbar, Typography } from "@material-ui/core";
 import React from "react";
 import { HideOnScroll } from "./HideOnScroll";
 
+const appBarHeight = 72;
+
 const useStyles = makeStyles(() => ({
     appbar: {
       backgroundColor: 'black',
-      height: 72
+      height: appBarHeight
     },
+    underConstruction: {
+      right: 0,
+      position: 'absolute'
+    }
   }));
 
 export function SamHomeAppBar() {
@@ -19,6 +25,12 @@ export function SamHomeAppBar() {
           <Typography variant="h6">
               👋 Hey Sam!
           </Typography>
+          <img
+            src="/under-construction.png"
+            alt="Banner that indicates that the website is stil under construction"
+            height={appBarHeight}
+            className={classes.underConstruction}
+          />
           </Toolbar>
       </AppBar>
     </HideOnScroll>
