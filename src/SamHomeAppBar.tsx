@@ -2,6 +2,7 @@ import { AppBar, Drawer, IconButton, makeStyles, Toolbar, Typography } from "@ma
 import React from "react";
 import MenuIcon from '@material-ui/icons/Menu';
 import { HideOnScroll } from "./HideOnScroll";
+import { SamAppDrawer } from "./AppDrawer";
 
 const appBarHeight = 72;
 
@@ -37,9 +38,7 @@ export function SamHomeAppBar() {
     <div
       onClick={closeDrawerIfOpen}
     >
-      <Drawer anchor="left" open={state.drawerOpen}>
-        Hey now!
-      </Drawer>
+      <SamAppDrawer drawerOpen={state.drawerOpen}/>
       <HideOnScroll>
         <AppBar className={classes.appbar} >
             <Toolbar>
