@@ -1,4 +1,4 @@
-import { AppBar, Drawer, IconButton, makeStyles, Toolbar, Typography } from "@material-ui/core";
+import { AppBar, IconButton, makeStyles, Toolbar, Typography } from "@material-ui/core";
 import React from "react";
 import MenuIcon from '@material-ui/icons/Menu';
 import { HideOnScroll } from "./HideOnScroll";
