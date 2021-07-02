@@ -3,12 +3,13 @@ import React from "react";
 import MenuIcon from '@material-ui/icons/Menu';
 import { HideOnScroll } from "./HideOnScroll";
 import { SamAppDrawer } from "./AppDrawer";
+import { primaryColor } from "./App";
 
 const appBarHeight = 72;
 
 const useStyles = makeStyles(() => ({
     appbar: {
-      backgroundColor: 'black',
+      backgroundColor: primaryColor,
       height: appBarHeight
     },
     underConstruction: {

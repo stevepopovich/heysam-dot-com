@@ -7,6 +7,9 @@ import { SamTourVideo } from './SamTourVideo';
 import { SamSTLViewer } from './SamSTLViewer';
 
 export const mainDisplayWidth = 800;
+export const primaryColor = "#272c34";
+export const accentLighter = "#424242";
+export const accentDarker = "#212121";
 
 const useStyles = makeStyles(() => ({
   root: {

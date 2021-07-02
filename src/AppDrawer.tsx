@@ -1,10 +1,10 @@
 import { Drawer, makeStyles } from "@material-ui/core";
 import React from "react";
-import { mainDisplayWidth } from "./App";
+import { accentLighter, mainDisplayWidth } from "./App";
 
 const useStyles = makeStyles(() => ({
     drawer: {
-      backgroundColor: "black",
+      backgroundColor: accentLighter,
       width: 256
     },
   }));
