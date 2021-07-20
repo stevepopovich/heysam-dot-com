@@ -26,6 +26,7 @@ const useStyles = makeStyles(() => ({
   root: {
     backgroundImage: 'url(sam-background.jpg)',
     backgroundRepeat: 'repeat-y',
+    minHeight: '100vh'
   },
 }));
 
