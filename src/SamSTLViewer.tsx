@@ -5,7 +5,8 @@ import { mainDisplayWidth } from "./App";
 
 const useStyles = makeStyles(() => ({
     root: {
-      padding: 8
+      padding: 8,
+      paddingTop: 64
     },
     card: {
       maxWidth: mainDisplayWidth,
