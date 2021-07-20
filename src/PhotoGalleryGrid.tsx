@@ -1,4 +1,3 @@
-import React from "react";
 import { Grid, makeStyles } from "@material-ui/core";
 import { PhotoGalleryCard } from "./PhotoGalleryCard";
 import { mainDisplayWidth } from "./App";
@@ -14,7 +13,8 @@ const useStyles = makeStyles(() => ({
     root: {
         flexGrow: 1,
         maxWidth: mainDisplayWidth + 16,
-        margin: 'auto'
+        margin: 'auto',
+        paddingTop: 56
     },
     item: {
       padding: 8

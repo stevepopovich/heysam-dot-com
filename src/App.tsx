@@ -1,4 +1,3 @@
-import React from 'react';
 import { SamHomeAppBar } from './SamHomeAppBar';
 import { MainFeatureCard } from './MainFeatureCard';
 import { makeStyles } from '@material-ui/core';
@@ -27,6 +26,7 @@ const useStyles = makeStyles(() => ({
   root: {
     backgroundImage: 'url(sam-background.jpg)',
     backgroundRepeat: 'repeat-y',
+    minHeight: '100vh'
   },
 }));
 
