@@ -1,4 +1,3 @@
-import React from 'react';
 import { SamHomeAppBar } from './SamHomeAppBar';
 import { MainFeatureCard } from './MainFeatureCard';
 import { makeStyles } from '@material-ui/core';

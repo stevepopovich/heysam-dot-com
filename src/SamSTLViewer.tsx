@@ -1,6 +1,5 @@
 
 import { Card, makeStyles } from "@material-ui/core";
-import React from "react";
 import STLViewer from "stl-viewer";
 import { mainDisplayWidth } from "./App";
 
