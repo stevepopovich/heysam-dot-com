@@ -8,7 +8,7 @@ import {useHistory} from 'react-router-dom';
 const drawerWidth = 256;
 const useStyles = makeStyles(() => ({
     drawer: {
-      backgroundColor: accentLighter,
+      backgroundColor: 'transparent',
       width: drawerWidth
     },
     list: {
