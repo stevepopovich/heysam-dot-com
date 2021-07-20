@@ -5,7 +5,7 @@ import { HideOnScroll } from "./HideOnScroll";
 import { SamAppDrawer } from "./AppDrawer";
 import { primaryColor } from "./App";
 
-const appBarHeight = 72;
+const appBarHeight = 64;
 
 const useStyles = makeStyles(() => ({
     appbar: {
