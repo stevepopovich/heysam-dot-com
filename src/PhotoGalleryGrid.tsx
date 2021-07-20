@@ -13,7 +13,8 @@ const useStyles = makeStyles(() => ({
     root: {
         flexGrow: 1,
         maxWidth: mainDisplayWidth + 16,
-        margin: 'auto'
+        margin: 'auto',
+        paddingTop: 56
     },
     item: {
       padding: 8
