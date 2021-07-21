@@ -1,6 +1,6 @@
 import { SamHomeAppBar } from './SamHomeAppBar';
 import { MainFeatureCard } from './MainFeatureCard';
-import { makeStyles, withWidth } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core';
 import { PhotoGalleryGrid } from './PhotoGalleryGrid';
 import { SamTourVideo } from './SamTourVideo';
 import { SamSTLViewer } from './SamSTLViewer';
