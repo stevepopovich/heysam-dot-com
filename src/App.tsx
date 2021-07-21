@@ -1,6 +1,6 @@
 import { SamHomeAppBar } from './SamHomeAppBar';
 import { MainFeatureCard } from './MainFeatureCard';
-import { makeStyles } from '@material-ui/core';
+import { makeStyles, withWidth } from '@material-ui/core';
 import { PhotoGalleryGrid } from './PhotoGalleryGrid';
 import { SamTourVideo } from './SamTourVideo';
 import { SamSTLViewer } from './SamSTLViewer';
@@ -26,7 +26,8 @@ const useStyles = makeStyles(() => ({
   root: {
     backgroundImage: 'url(sam-background.jpg)',
     backgroundRepeat: 'repeat-y',
-    minHeight: '100vh'
+    minHeight: '100vh',
+    width: '100%'
   },
 }));
 
