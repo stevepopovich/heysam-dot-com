@@ -24,7 +24,7 @@ export function MainFeatureCard(): JSX.Element {
         <Card className={classes.card}>
             <CardMedia
                 className={classes.media}
-                image="/me-with-sam-chassis.jpg"
+                image="/it-me-holding-sam.jpg"
                 title="Developer with all iterations of Sam"
             />
         </Card>
