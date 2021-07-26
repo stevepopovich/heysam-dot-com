@@ -1,5 +1,5 @@
 import { Drawer, List, ListItem, ListItemIcon, ListItemText, makeStyles } from "@material-ui/core";
-import { accentLighter, SamRoute, textColor } from "./App";
+import { primaryColor, SamRoute, textColor } from "./App";
 import HomeIcon from '@material-ui/icons/Home';
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import CropRotateIcon from '@material-ui/icons/CropRotate';
@@ -12,7 +12,7 @@ const useStyles = makeStyles(() => ({
       width: drawerWidth
     },
     list: {
-      backgroundColor: accentLighter,
+      backgroundColor: primaryColor,
       width: drawerWidth,
       height: "100%"
     },

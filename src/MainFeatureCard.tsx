@@ -3,12 +3,11 @@ import { mainDisplayWidth } from "./App";
 
 const useStyles = makeStyles(() => ({
     root: {
-      padding: 8
     },
     card: {
       maxWidth: mainDisplayWidth,
       margin: 'auto',
-      marginTop: 72
+      marginTop: 16,
     },
     media: {
       height: 0,
@@ -22,11 +21,11 @@ export function MainFeatureCard(): JSX.Element {
     return (
       <div className={classes.root}>
         <Card className={classes.card}>
-            <CardMedia
-                className={classes.media}
-                image="/it-me-holding-sam.jpg"
-                title="Developer with all iterations of Sam"
-            />
+          <CardMedia
+            className={classes.media}
+            image="/it-me-holding-sam.jpg"
+            title="Developer with all iterations of Sam"
+          />
         </Card>
       </div>
     )
