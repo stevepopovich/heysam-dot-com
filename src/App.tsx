@@ -1,5 +1,4 @@
 import { SamHomeAppBar } from './SamHomeAppBar';
-import { MainFeatureCard } from './MainFeatureCard';
 import { makeStyles } from '@material-ui/core';
 import { PhotoGalleryGrid } from './PhotoGalleryGrid';
 import { SamTourVideo } from './SamTourVideo';
@@ -9,12 +8,19 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import { HomePage } from './HomePage';
+import { Footer } from './Footer';
+
+import "@fontsource/orbitron";
 
 export const mainDisplayWidth = 800;
-export const primaryColor = "#272c34";
-export const accentLighter = "#424242";
-export const accentDarker = "#212121";
-export const textColor = "#ffffff";
+export const primaryColor = "#019CFF"; // icon blue
+export const accentDarker = "#007DCD";
+export const analogousBrighter = "#011DFF";
+export const attentionColor = "#FF6401";
+export const textColor = "#FFFFFF";
+export const bodyTextColor = "#000000";
+export const footerColor = "#ECEEF2";
 
 export enum SamRoute {
   home = "/",
@@ -24,11 +30,14 @@ export enum SamRoute {
 
 const useStyles = makeStyles(() => ({
   root: {
-    backgroundImage: 'url(sam-background.jpg)',
-    backgroundRepeat: 'repeat-y',
+    backgroundColor: footerColor,
     minHeight: '100vh',
-    width: '100%'
+    width: '100%',
   },
+  container: {
+    backgroundColor: 'white',
+    paddingBottom: 32
+  }
 }));
 
 function App() {
@@ -38,18 +47,21 @@ function App() {
     <div className={classes.root}>
       <Router>
         <SamHomeAppBar />
-        <Switch>
-          <Route path={SamRoute.gallery}>
-            <PhotoGalleryGrid />
-            <SamTourVideo />
-          </Route>
-          <Route path={SamRoute.model}>
-            <SamSTLViewer />
-          </Route>
-          <Route path={SamRoute.home}>
-            <MainFeatureCard />
-          </Route>
-        </Switch>
+        <div className={classes.container}>
+          <Switch>
+              <Route path={SamRoute.gallery}>
+                <PhotoGalleryGrid />
+                <SamTourVideo />
+              </Route>
+              <Route path={SamRoute.model}>
+                <SamSTLViewer />
+              </Route>
+              <Route path={SamRoute.home}>
+                <HomePage />
+              </Route>
+          </Switch>
+        </div>
+        <Footer />
       </Router>
     </div>
   )
