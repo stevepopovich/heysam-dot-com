@@ -106,10 +106,10 @@ export function HomePage(): JSX.Element {
                             ✨ Ultrasonic range finding
                         </Typography>
                         <Typography variant={featureSetTypographySize} className={classes.subtitles}>
-                            📱 100% Kotlin app and highly tested
+                            📱 Highly tested, 100% Kotlin app
                         </Typography>
                         <Typography variant={featureSetTypographySize} className={classes.subtitles}>
-                            ⚡️ Real time Arduino-Arduino communication
+                            ⚡️ Real time Arduino-Android communication
                         </Typography>
                     </Grid>
                     <Grid key="photo2" item xs={12} sm={4}>
