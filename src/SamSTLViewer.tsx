@@ -35,7 +35,7 @@ export function SamSTLViewer(props: any): JSX.Element {
               width={width}
               modelColor='#32CD32'
               backgroundColor='#FFFFFF'
-              cameraY={-15} // -15
+              cameraY={-15}
               cameraZ={0}
               cameraX={0}
               rotate={true}
