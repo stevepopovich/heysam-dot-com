@@ -1,24 +1,34 @@
 
-import { Card, makeStyles } from "@material-ui/core";
+import { Card, makeStyles, Typography } from "@material-ui/core";
 import STLViewer from "stl-viewer";
-import { mainDisplayWidth } from "./App";
+import { attentionColor, bodyTextColor, mainDisplayWidth } from "../App";
 
 const useStyles = makeStyles(() => ({
-    root: {
-      padding: 8,
-      paddingTop: 64
-    },
-    card: {
+  root: {
+    backgroundColor: attentionColor,
+    paddingTop: 16,
+    paddingBottom: 24
+  },
+  card: {
       maxWidth: mainDisplayWidth,
-      marginTop: 16,
       margin: 'auto',
-    },
-    media: {
-      margin: 'auto'
-    },
+  },
+  media: {
+      margin: 'auto',
+  },
+  subtitle: {
+      color: bodyTextColor,
+      marginTop: 16,
+      marginBottom: 16,
+      textAlign: 'center',
+      fontWeight: 400,
+      fontFamily: "Orbitron",
+      marginLeft: 8,
+      marginRight: 8
+  }
   }));
 
-export function SamSTLViewer(props: any): JSX.Element {
+export function SamSTLViewerSection(): JSX.Element {
     const classes = useStyles();
 
     const lights = [-125, -125, 200];
@@ -27,6 +37,9 @@ export function SamSTLViewer(props: any): JSX.Element {
 
     return (
       <div className={classes.root}>
+        <Typography variant="h4" className={classes.subtitle}>
+            Get up close and personal.
+        </Typography>
         <Card className={classes.card}>
             <STLViewer
               className={classes.media}

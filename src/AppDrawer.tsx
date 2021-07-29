@@ -2,7 +2,6 @@ import { Drawer, List, ListItem, ListItemIcon, ListItemText, makeStyles } from "
 import { primaryColor, SamRoute, textColor } from "./App";
 import HomeIcon from '@material-ui/icons/Home';
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
-import CropRotateIcon from '@material-ui/icons/CropRotate';
 import {useHistory} from 'react-router-dom';
 
 const drawerWidth = 256;
@@ -37,10 +36,6 @@ export function SamAppDrawer(props: any): JSX.Element {
           <ListItem button key="Gallery" className={classes.listItem} onClick={handleOnClick(SamRoute.gallery)}>
             <ListItemIcon><PhotoLibraryIcon className={classes.listItem} /></ListItemIcon>
             <ListItemText primary={"Gallery"} />
-          </ListItem>
-          <ListItem button key="Model" className={classes.listItem} onClick={handleOnClick(SamRoute.model)}>
-            <ListItemIcon><CropRotateIcon className={classes.listItem} /></ListItemIcon>
-            <ListItemText primary={"Model"} />
           </ListItem>
       </List>
     </Drawer>

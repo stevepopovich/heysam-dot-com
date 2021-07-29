@@ -1,17 +1,16 @@
 import { SamHomeAppBar } from './SamHomeAppBar';
 import { makeStyles } from '@material-ui/core';
-import { PhotoGalleryGrid } from './PhotoGalleryGrid';
-import { SamTourVideo } from './SamTourVideo';
-import { SamSTLViewer } from './SamSTLViewer';
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
-import { HomePage } from './HomePage';
+import { HomePage } from './HomePage/HomePage';
 import { Footer } from './Footer';
 
 import "@fontsource/orbitron";
+import { PhotoGalleryGrid } from './Gallery/PhotoGalleryGrid';
+import { SamTourVideo } from './Gallery/SamTourVideo';
 
 export const mainDisplayWidth = 800;
 export const primaryColor = "#019CFF"; // icon blue
@@ -25,7 +24,6 @@ export const footerColor = "#ECEEF2";
 export enum SamRoute {
   home = "/",
   gallery = "/gallery",
-  model = "/model"
 }
 
 const useStyles = makeStyles(() => ({
@@ -52,9 +50,6 @@ function App() {
               <Route path={SamRoute.gallery}>
                 <PhotoGalleryGrid />
                 <SamTourVideo />
-              </Route>
-              <Route path={SamRoute.model}>
-                <SamSTLViewer />
               </Route>
               <Route path={SamRoute.home}>
                 <HomePage />
