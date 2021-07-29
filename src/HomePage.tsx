@@ -26,7 +26,7 @@ const useStyles = makeStyles(() => ({
     subtitleTop: {
         color: textColor,
         marginLeft: 16,
-        marginTop: 32
+        marginTop: 48
     },
     subtitles: {
         color: textColor,
@@ -102,7 +102,7 @@ export function HomePage(): JSX.Element {
                         </Card>
                     </Grid>
                     <Grid key="subtitle2" item xs={12} sm={8}>
-                        <Typography variant={featureSetTypographySize} className={classes.subtitles}>
+                        <Typography variant={featureSetTypographySize} className={classes.subtitleTop}>
                             ✨ Ultrasonic range finding
                         </Typography>
                         <Typography variant={featureSetTypographySize} className={classes.subtitles}>
