@@ -32,5 +32,3 @@ export function HomePage(): JSX.Element {
         </div>
     )
 }
-
-// Speaks for itself. Open source
