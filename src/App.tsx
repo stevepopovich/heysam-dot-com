@@ -10,7 +10,6 @@ import { Footer } from './Footer';
 
 import "@fontsource/orbitron";
 import { PhotoGalleryGrid } from './Gallery/PhotoGalleryGrid';
-import { SamTourVideo } from './Gallery/SamTourVideo';
 
 export const mainDisplayWidth = 800;
 export const primaryColor = "#019CFF"; // icon blue
@@ -49,7 +48,6 @@ function App() {
           <Switch>
               <Route path={SamRoute.gallery}>
                 <PhotoGalleryGrid />
-                <SamTourVideo />
               </Route>
               <Route path={SamRoute.home}>
                 <HomePage />

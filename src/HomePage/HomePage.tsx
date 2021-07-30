@@ -3,6 +3,7 @@ import { bodyTextColor } from "../App";
 import { MainFeatureCard } from "./MainFeatureCard";
 import { SamInfoSection } from "./SamInfoSection";
 import { SamSTLViewerSection } from "./SamSTLViewerSection";
+import { VideoFeatureSection } from "./VideoFeatureSection";
 
 const useStyles = makeStyles(() => ({
     title: {
@@ -27,6 +28,7 @@ export function HomePage(): JSX.Element {
             <MainFeatureCard />
             <SamInfoSection />
             <SamSTLViewerSection />
+            <VideoFeatureSection />
         </div>
     )
 }
