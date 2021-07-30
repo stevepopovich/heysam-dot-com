@@ -15,11 +15,13 @@ const useStyles = makeStyles(() => ({
     subtitleTop: {
         color: textColor,
         marginLeft: 16,
+        marginRight: 8,
         marginTop: 48
     },
     subtitles: {
         color: textColor,
         marginLeft: 16,
+        marginRight: 8,
         marginTop: 8
     },
     card: {
