@@ -1,5 +1,5 @@
 import { makeStyles, Typography } from "@material-ui/core";
-import { bodyTextColor } from "../App";
+import { bodyTextColor, mainDisplayWidth } from "../App";
 import { MainFeatureCard } from "./MainFeatureCard";
 import { SamInfoSection } from "./SamInfoSection";
 import { SamSTLViewerSection } from "./SamSTLViewerSection";
@@ -15,6 +15,16 @@ const useStyles = makeStyles(() => ({
       marginLeft: 8,
       marginRight: 8
     },
+    subtitle: {
+        color: bodyTextColor,
+        marginTop: 8,
+        textAlign: 'center',
+        fontWeight: 100,
+        fontFamily: "Orbitron",
+        marginLeft: "auto",
+        marginRight: "auto",
+        maxWidth: mainDisplayWidth
+    }
   }));
 
 export function HomePage(): JSX.Element {
@@ -23,7 +33,10 @@ export function HomePage(): JSX.Element {
     return (
         <div>
             <Typography variant="h3" className={classes.title}>
-                Android + Arduino = Sam
+                Man's New Best Friend. 
+            </Typography>
+            <Typography variant="h5" className={classes.subtitle}>
+                The World's First Arduino-Android Powered Robot.
             </Typography>
             <MainFeatureCard />
             <SamInfoSection />
