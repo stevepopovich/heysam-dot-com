@@ -1,4 +1,4 @@
-import { Card, CardMedia, Grid, makeStyles, Typography } from "@material-ui/core";
+import { Box, Card, CardMedia, Grid, makeStyles, Typography } from "@material-ui/core";
 import { accentDarker, mainDisplayWidth, textColor } from "../App";
 
 const useStyles = makeStyles(() => ({
@@ -42,6 +42,14 @@ export function SamInfoSection(): JSX.Element {
     return (
         <div className={classes.gridSection}>
             <Grid container className={classes.gridContainer}>
+                <Grid key="photo1" item xs={false} sm={4}>
+                    <Card className={classes.card}>
+                        <CardMedia
+                            className={classes.media}
+                            image="sam_pose.jpeg"
+                        />
+                    </Card>
+                </Grid>
                 <Grid key="subtitle1" item xs={12} sm={8}>
                     <Typography variant={featureSetTypographySize} className={classes.subtitleTop}>
                         🤖 Continuous voice and vision processing
@@ -53,13 +61,16 @@ export function SamInfoSection(): JSX.Element {
                         🚜 Digital tank drivetrain 
                     </Typography>
                 </Grid>
-                <Grid key="photo1" item xs={12} sm={4}>
-                    <Card className={classes.card}>
-                        <CardMedia
-                            className={classes.media}
-                            image="sam_pose.jpeg"
-                        />
-                    </Card>
+                <Grid key="photo1" item xs={12}>
+                    <Box component="div" display={{ xs: 'block', sm: 'none' }}>
+
+                        <Card className={classes.card} >
+                            <CardMedia
+                                className={classes.media}
+                                image="sam_pose.jpeg"
+                            />
+                        </Card>
+                    </Box>
                 </Grid>
                 <Grid key="subtitle2" item xs={12} sm={8}>
                     <Typography variant={featureSetTypographySize} className={classes.subtitleTop}>
