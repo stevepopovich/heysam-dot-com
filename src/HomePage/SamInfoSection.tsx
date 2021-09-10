@@ -1,5 +1,5 @@
 import { Box, Card, CardMedia, Grid, makeStyles, Typography } from "@material-ui/core";
-import { accentDarker, bodyTextColor, mainDisplayWidth, textColor } from "../App";
+import { bodyTextColor, mainDisplayWidth } from "../App";
 
 const useStyles = makeStyles(() => ({
     gridSection: {
