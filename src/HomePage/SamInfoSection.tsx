@@ -1,9 +1,15 @@
 import { Box, Card, CardMedia, Grid, makeStyles, Typography } from "@material-ui/core";
-import { accentDarker, mainDisplayWidth, textColor } from "../App";
+import { accentDarker, bodyTextColor, mainDisplayWidth, textColor } from "../App";
 
 const useStyles = makeStyles(() => ({
     gridSection: {
-        backgroundColor: accentDarker,
+        backgroundImage: 'url(sam-background.jpg)',
+        minHeight: '500px',
+        backgroundAttachment: 'fixed',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+
         marginTop: 16,
         paddingBottom: 16
     },
@@ -13,25 +19,30 @@ const useStyles = makeStyles(() => ({
         marginRight: 'auto'
     },
     subtitleTop: {
-        color: textColor,
+        color: bodyTextColor,
         marginLeft: 16,
         marginRight: 8,
-        marginTop: 48
     },
     subtitles: {
-        color: textColor,
+        color: bodyTextColor,
         marginLeft: 16,
         marginRight: 8,
-        marginTop: 8
+        marginTop: 8,
+    },
+    textContainers: {
+        background: '#FFFFFF',
+        marginTop: 40,
+        paddingTop: 32,
+        paddingBottom: 32
     },
     card: {
-        maxWidth: 300,
         margin: 'auto',
         marginTop: 16,
+        marginBottom: 16
     },
     media: {
         height: 0,
-        paddingTop: '75%'
+        paddingTop: '75%',
     },
 }));
 
@@ -42,7 +53,7 @@ export function SamInfoSection(): JSX.Element {
     return (
         <div className={classes.gridSection}>
             <Grid container className={classes.gridContainer}>
-                <Grid key="photo1" item xs={false} sm={4}>
+                <Grid key="photo1" item xs={false} sm={5}>
                     <Card className={classes.card}>
                         <CardMedia
                             className={classes.media}
@@ -50,20 +61,21 @@ export function SamInfoSection(): JSX.Element {
                         />
                     </Card>
                 </Grid>
-                <Grid key="subtitle1" item xs={12} sm={8}>
-                    <Typography variant={featureSetTypographySize} className={classes.subtitleTop}>
-                        🤖 Continuous voice and vision processing
-                    </Typography>
-                    <Typography variant={featureSetTypographySize} className={classes.subtitles}>
-                        🖨 Custom 3D printed chassis
-                    </Typography>
-                    <Typography variant={featureSetTypographySize} className={classes.subtitles}>
-                        🚜 Digital tank drivetrain 
-                    </Typography>
+                <Grid key="subtitle1" item xs={12} sm={7}>
+                    <div className={classes.textContainers}>
+                        <Typography variant={featureSetTypographySize} className={classes.subtitleTop}>
+                            🤖 Continuous voice and vision processing
+                        </Typography>
+                        <Typography variant={featureSetTypographySize} className={classes.subtitles}>
+                            🖨 Custom 3D printed chassis
+                        </Typography>
+                        <Typography variant={featureSetTypographySize} className={classes.subtitles}>
+                            🚜 Digital tank drivetrain 
+                        </Typography>
+                    </div>
                 </Grid>
                 <Grid key="photo1" item xs={12}>
                     <Box component="div" display={{ xs: 'block', sm: 'none' }}>
-
                         <Card className={classes.card} >
                             <CardMedia
                                 className={classes.media}
@@ -72,18 +84,20 @@ export function SamInfoSection(): JSX.Element {
                         </Card>
                     </Box>
                 </Grid>
-                <Grid key="subtitle2" item xs={12} sm={8}>
-                    <Typography variant={featureSetTypographySize} className={classes.subtitleTop}>
-                        ✨ Ultrasonic range finding
-                    </Typography>
-                    <Typography variant={featureSetTypographySize} className={classes.subtitles}>
-                        📱 Highly tested, 100% Kotlin app
-                    </Typography>
-                    <Typography variant={featureSetTypographySize} className={classes.subtitles}>
-                        ⚡️ Real time Arduino-Android communication
-                    </Typography>
+                <Grid key="subtitle2" item xs={12} sm={7}>
+                    <div className={classes.textContainers}>
+                        <Typography variant={featureSetTypographySize} className={classes.subtitleTop}>
+                            ✨ Ultrasonic range finding
+                        </Typography>
+                        <Typography variant={featureSetTypographySize} className={classes.subtitles}>
+                            📱 Highly tested, 100% Kotlin app
+                        </Typography>
+                        <Typography variant={featureSetTypographySize} className={classes.subtitles}>
+                            ⚡️ Real time Arduino-Android communication
+                        </Typography>
+                    </div>
                 </Grid>
-                <Grid key="photo2" item xs={12} sm={4}>
+                <Grid key="photo2" item xs={12} sm={5}>
                     <Card className={classes.card}>
                         <CardMedia
                             className={classes.media}
