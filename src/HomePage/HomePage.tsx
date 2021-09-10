@@ -33,7 +33,7 @@ export function HomePage(): JSX.Element {
     return (
         <div>
             <Typography variant="h3" className={classes.title}>
-                Man's New Best Friend. 
+                Man's New Best Friend
             </Typography>
             <Typography variant="h5" className={classes.subtitle}>
                 The World's First Arduino-Android Powered Robot.
