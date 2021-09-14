@@ -32,7 +32,7 @@ export function MainFeatureCard(): JSX.Element {
           <div className={classes.card}>
             <iframe
               className={classes.media}
-              src="https://www.youtube.com/embed/t2S_PSkZUTg?modestbranding=1&autohide=1&mute=1&showinfo=1&controls=0&autoplay=1"
+              src="https://www.youtube.com/embed/t2S_PSkZUTg?modestbranding=1&autohide=1&mute=1&showinfo=1&controls=1&autoplay=1"
               title="Sam Teaser Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
