@@ -1,5 +1,6 @@
 import { makeStyles, Typography } from "@material-ui/core";
 import { bodyTextColor, mainDisplayWidth } from "../App";
+import { ItMeSection } from "./ItMeSection";
 import { MainFeatureCard } from "./MainFeatureCard";
 import { SamInfoSection } from "./SamInfoSection";
 import { SamSTLViewerSection } from "./SamSTLViewerSection";
@@ -42,6 +43,7 @@ export function HomePage(): JSX.Element {
             <SamInfoSection />
             <SamSTLViewerSection />
             <VideoFeatureSection />
+            <ItMeSection />
         </div>
     )
 }
