@@ -7,7 +7,7 @@
     "@fontsource/orbitron": "^4.5.1",
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
-    "@types/react": "^17.0.24",
+    "@types/react": "^17.0.34",
     "@types/react-dom": "^17.0.9",
     "@types/react-router-dom": "^5.3.0",
     "gh-pages": "^3.2.3",
